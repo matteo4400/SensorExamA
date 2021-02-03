@@ -22,4 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SelectTypeSavedValue.class);
         startActivity(intent);
     }
+    public void OpenMotionSensor(View view) {
+        Intent intent = new Intent(this, MotionSensor.class);
+        startActivity(intent);
+    }
 }
