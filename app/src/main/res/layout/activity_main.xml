@@ -26,10 +26,14 @@
         android:onClick="OpenMotionSensor"
         android:text="@string/button_text_motion" />
     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OpenEnvironmentalSensors"
+        android:text="@string/button_text_moviment" />
+    <Button
         android:layout_width="211dp"
         android:layout_height="wrap_content"
         android:onClick="OpenSelectTypeSavedValue"
         android:text="@string/btn_text_select_saved_value" />
-
 
 </LinearLayout>

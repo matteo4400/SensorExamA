@@ -33,5 +33,6 @@
     <string name="light_display_text">Valore Sensore di Luminosità</string>
     <string name="pressure_display_text">Valore Sensore Pressione</string>
     <string name="humidity_display_text">Valore Sensore di Umidità</string>
+    <string name="button_text_moviment">Sensori di Movimento</string>
 
 </resources>
