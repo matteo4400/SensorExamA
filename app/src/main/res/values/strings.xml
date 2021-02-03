@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="main_text">Sensori</string>
-    <string name="button_text">Sensori Ambientali</string>
+    <string name="button_text_ambient">Sensori Ambientali</string>
     <string name="button_text_motion">Sensori Movimento</string>
-    <string name="button_text_position">Sensori di Posizione</string>
+    <string name="button_text_position">Sensori Posizione</string>
     <string name="environment_type_text">Tipologia Sensori Ambientali</string>
     <string name="motion_type_text">Tipologia Sensori Movimento</string>
     <string name="ambient_temperature_text">Temperatura</string>
