@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="main_text">Sensori</string>
+    <string name="button_text">Sensori Ambientali</string>
+    <string name="environment_type_text">Tipologia Sensori Ambientali</string>
+    <string name="ambient_temperature_text">Temperatura</string>
+    <string name="light_text">Luminosità</string>
+    <string name="pressure_text">Pressione</string>
+    <string name="relative_humidity_text">Umidità</string>
+    <string name="btn_text_select_saved_value">Visualizza Valore Salvato Per Tipologia Sensore</string>
+    <string name="type_sensor_list_text">Selettore Tipologia Sensore</string>
+    <string name="sensor_type_selector_text">Seleziona la Tipologia del Sensore:</string>
+    <string name="environmental_sensor_name">Ambientale</string>
+    <string name="motion_sensor_name">Movimento</string>
+    <string name="position_sensor_name">Posizione</string>
+    <string name="next_operation_btn_text">Procedi</string>
+    <string name="environment_selector_text">Seleziona la Tipologia di Sensore Ambientale:</string>
+    <string name="view_value_text">Visualizza</string>
+    <string name="selected_value_display_text">Visualizzazione Valore Salvato</string>
+    <string name="temperature_sensor_list_text">Lista Sensori di Temperatura</string>
+    <string name="temperature_features_text">Caratteristiche Sensore di Temperatura</string>
+    <string name="light_sensor_list_text">Lista Sensori di Luminosità</string>
+    <string name="light_features_text">Caratteristiche Sensore di Luminosità</string>
+    <string name="pressure_sensor_list_text">Lista Sensori Pressione</string>
+    <string name="pressure_features_text">Caratteristiche Sensore Pressione</string>
+    <string name="humidity_sensor_list_text">Lista Sensori Umidità</string>
+    <string name="humidity_features_text">Caratteristiche Sensore di Umidità</string>
+    <string name="value_text">Visualizza Valore Attuale Sensore</string>
+    <string name="safe_button_text">Salva il valore attuale</string>
+    <string name="read_button_text">Visualizza valore salvato</string>
+    <string name="temperature_display_text">Valore Sensore di Temperatura</string>
+    <string name="light_display_text">Valore Sensore di Luminosità</string>
+    <string name="pressure_display_text">Valore Sensore Pressione</string>
+    <string name="humidity_display_text">Valore Sensore di Umidità</string>
+
+</resources>
