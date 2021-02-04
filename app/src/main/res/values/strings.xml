@@ -16,6 +16,11 @@
     <string name="motion_linear_acceleration_text">Accelerazione Lineare</string>
     <string name="motion_step_counter_text">Conta Passi</string>
     <string name="accelerometer_sensor_list_text">Lista Sensori Accelerometro</string>
+    <string name="gravity_sensor_list_text">Lista Sensori Gravità</string>
+    <string name="accelerometer_features_text">Caratteristiche Sensore Accelerometro</string>
+    <string name="gravity_features_text">Caratteristiche Sensore di Gravità</string>
+    <string name="accelerometer_display_text">Valore Sensore Accelerometro</string>
+    <string name="gravity_display_text">Valore Sensore di Gravità</string>
     <string name="btn_text_select_saved_value">Visualizza Valore Salvato Per Tipologia Sensore</string>
     <string name="type_sensor_list_text">Selettore Tipologia Sensore</string>
     <string name="sensor_type_selector_text">Seleziona la Tipologia del Sensore:</string>
@@ -41,5 +46,5 @@
     <string name="light_display_text">Valore Sensore di Luminosità</string>
     <string name="pressure_display_text">Valore Sensore Pressione</string>
     <string name="humidity_display_text">Valore Sensore di Umidità</string>
-
+    <string name="motion_selector_text">Seleziona la Tipologia di Sensore di Movimento</string>
 </resources>
