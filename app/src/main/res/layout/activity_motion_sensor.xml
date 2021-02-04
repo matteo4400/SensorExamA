@@ -14,5 +14,31 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textStyle="italic"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motion_accelerometer_text"
+        android:onClick="OpenMotionAccelerometerSensors"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motion_gravity_text"
+        android:onClick="OpenMotionGravitySensors"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motion_gyroscope_text"
+        android:onClick="OpenMotionGyroscopeSensors"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motion_linear_acceleration_text"
+        android:onClick="OpenMotionLinearAccelerationSensors"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motion_step_counter_text"
+        android:onClick="OpenMotionStepCounterSensors"/>
+
 
 </LinearLayout>

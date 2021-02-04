@@ -10,6 +10,12 @@
     <string name="light_text">Luminosità</string>
     <string name="pressure_text">Pressione</string>
     <string name="relative_humidity_text">Umidità</string>
+    <string name="motion_accelerometer_text">Accelerometro</string>
+    <string name="motion_gravity_text">Gravità</string>
+    <string name="motion_gyroscope_text">Giroscopio</string>
+    <string name="motion_linear_acceleration_text">Accelerazione Lineare</string>
+    <string name="motion_step_counter_text">Conta Passi</string>
+    <string name="accelerometer_sensor_list_text">Lista Sensori Accelerometro</string>
     <string name="btn_text_select_saved_value">Visualizza Valore Salvato Per Tipologia Sensore</string>
     <string name="type_sensor_list_text">Selettore Tipologia Sensore</string>
     <string name="sensor_type_selector_text">Seleziona la Tipologia del Sensore:</string>

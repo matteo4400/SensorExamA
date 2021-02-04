@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".MotionSensor"></activity>
+        <activity android:name=".StepCounterSensors"></activity>
+        <activity android:name=".LinearAccelerationSensors" />
+        <activity android:name=".GyroscopeSensors" />
+        <activity android:name=".GravitySensors" />
+        <activity android:name=".AccelerometerSensors" />
+        <activity android:name=".MotionSensor" />
         <activity android:name=".PositionSelectSavedValue" />
         <activity android:name=".MotionSelectSavedValue" />
         <activity android:name=".SelectTypeSavedValue" />
