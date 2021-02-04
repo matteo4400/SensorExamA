@@ -28,7 +28,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="OpenEnvironmentalSensors"
+        android:onClick="OpenPositionSensor"
         android:text="@string/button_text_position" />
     <Button
         android:layout_width="211dp"

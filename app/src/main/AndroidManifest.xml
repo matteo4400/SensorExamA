@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".StepCounterSensors"></activity>
+        <activity android:name=".PositionSensor"></activity>
+        <activity android:name=".StepCounterSensors" />
         <activity android:name=".LinearAccelerationSensors" />
         <activity android:name=".GyroscopeSensors" />
         <activity android:name=".GravitySensors" />
