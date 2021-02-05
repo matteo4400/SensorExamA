@@ -6,6 +6,7 @@
     <string name="button_text_position">Sensori Posizione</string>
     <string name="environment_type_text">Tipologia Sensori Ambientali</string>
     <string name="motion_type_text">Tipologia Sensori Movimento</string>
+    <string name="position_type_text">Tipologia Sensori Posizione</string>
     <string name="ambient_temperature_text">Temperatura</string>
     <string name="light_text">Luminosità</string>
     <string name="pressure_text">Pressione</string>
@@ -15,6 +16,10 @@
     <string name="motion_gyroscope_text">Giroscopio</string>
     <string name="motion_linear_acceleration_text">Accelerazione Lineare</string>
     <string name="motion_step_counter_text">Conta Passi</string>
+    <string name="geomagnetic_rotation_text">Vettore Rotazione Geomagnetica</string>
+    <string name="magnetic_field_text">Campo Magnetico</string>
+    <string name="orientation_text">Orientamento</string>
+    <string name="proximity_text">Prossimità</string>
     <string name="accelerometer_sensor_list_text">Lista Sensori Accelerometro</string>
     <string name="gravity_sensor_list_text">Lista Sensori Gravità</string>
     <string name="accelerometer_features_text">Caratteristiche Sensore Accelerometro</string>
