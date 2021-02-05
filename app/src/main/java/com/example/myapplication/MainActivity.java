@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OpenPositionSensor(View view) {
-        Intent intent = new Intent(this, MotionSensor.class);
+        Intent intent = new Intent(this, PositionSensor.class);
         startActivity(intent);
     }
 }
