@@ -53,7 +53,7 @@ public class GravitySensors extends AppCompatActivity {
         } else {
             LinearLayout ll = new LinearLayout(this);
             final TextView textview = new TextView(this);
-            textview.setText("Sorry, there are no accelerometer sensors on your device");
+            textview.setText("Sorry, there are no gravity sensors on your device");
             textview.setLayoutParams(params);
             ll.addView(textview);
             lm.addView(ll);

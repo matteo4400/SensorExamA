@@ -21,6 +21,15 @@
     <string name="gravity_features_text">Caratteristiche Sensore di Gravità</string>
     <string name="accelerometer_display_text">Valore Sensore Accelerometro</string>
     <string name="gravity_display_text">Valore Sensore di Gravità</string>
+    <string name="gyroscope_sensor_list_text">Lista Sensori Giroscopio</string>
+    <string name="gyroscope_features_text">Caratteristiche Sensore Giroscopio</string>
+    <string name="gyroscope_display_text">Valore Sensore Giroscopio</string>
+    <string name="linear_acceleration_sensor_list_text">Lista Sensori di Accelerazione Lineare</string>
+    <string name="linear_acceleration_features_text">Caratteristiche Sensore di Accelerazione Lineare</string>
+    <string name="linear_acceleration_display_text">Valore Sensore di Accelerazione Lineare</string>
+    <string name="step_counter_sensor_list_text">Lista Sensori Conta Passi</string>
+    <string name="step_counter_features_text">Caratteristiche Sensore Conta Passi</string>
+    <string name="step_counter_display_text">Valore Sensore Conta Passi</string>
     <string name="btn_text_select_saved_value">Visualizza Valore Salvato Per Tipologia Sensore</string>
     <string name="type_sensor_list_text">Selettore Tipologia Sensore</string>
     <string name="sensor_type_selector_text">Seleziona la Tipologia del Sensore:</string>

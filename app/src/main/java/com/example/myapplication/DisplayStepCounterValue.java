@@ -18,26 +18,26 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.List;
 
-public class DisplayGravityValue extends AppCompatActivity implements SensorEventListener  {
+public class DisplayStepCounterValue extends AppCompatActivity implements SensorEventListener  {
 
     TextView displayvalue;
     TextView tv;
 
     private SensorManager sensormanager;
-    private Sensor Gravitysensor;
+    private Sensor StepCountersensor;
 
     static final int read_block_size = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_gravity_value);
-        displayvalue = findViewById(R.id.displaygravityvalue);
+        setContentView(R.layout.activity_display_step_counter_value);
+        displayvalue = findViewById(R.id.displaystepcountervalue);
         Intent intent = getIntent();
-        int gravity_sensor_index = Integer.parseInt(intent.getStringExtra(GravitySensors.EXTRA_MESSAGE));
+        int step_counter_sensor_index = Integer.parseInt(intent.getStringExtra(StepCounterSensors.EXTRA_MESSAGE));
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        List<Sensor> GravityList = sensormanager.getSensorList(Sensor.TYPE_GRAVITY);
-        Gravitysensor = GravityList.get(gravity_sensor_index);
+        List<Sensor> StepCounterList = sensormanager.getSensorList(Sensor.TYPE_STEP_COUNTER);
+        StepCountersensor = StepCounterList.get(step_counter_sensor_index);
     }
 
     @Override
@@ -46,14 +46,14 @@ public class DisplayGravityValue extends AppCompatActivity implements SensorEven
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        float gravity_value = event.values[0];
-        displayvalue.setText("Sensor value : " + gravity_value + "\n");
+        float step_counter_value = event.values[0];
+        displayvalue.setText("Sensor value : " + step_counter_value + "\n");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        sensormanager.registerListener(this, Gravitysensor, SensorManager.SENSOR_DELAY_NORMAL);
+        sensormanager.registerListener(this, StepCountersensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class DisplayGravityValue extends AppCompatActivity implements SensorEven
     public void BtnSafe(View view) {
         //Write text into file
         try {
-            FileOutputStream fileout = openFileOutput("mygravityvalue.txt", MODE_PRIVATE);
+            FileOutputStream fileout = openFileOutput("mystepcountervalue.txt", MODE_PRIVATE);
             OutputStreamWriter outputwriter = new OutputStreamWriter(fileout);
             outputwriter.write(displayvalue.getText().toString());
             outputwriter.close();
@@ -81,7 +81,7 @@ public class DisplayGravityValue extends AppCompatActivity implements SensorEven
     public void BtnRead(View view) {
         //Reading test from file
         try{
-            FileInputStream filein = openFileInput("mygravityvalue.txt");
+            FileInputStream filein = openFileInput("mystepcountervalue.txt");
             InputStreamReader inputread = new InputStreamReader(filein);
 
             char [] inputBuffer = new char[read_block_size];
@@ -93,7 +93,7 @@ public class DisplayGravityValue extends AppCompatActivity implements SensorEven
                 String readstring = String.copyValueOf(inputBuffer, 0, charRead);
                 s += readstring;
             }
-            tv = findViewById(R.id.gravitysavedvalue);
+            tv = findViewById(R.id.stepcountersavedvalue);
             inputread.close();
             tv.setText(s);
 

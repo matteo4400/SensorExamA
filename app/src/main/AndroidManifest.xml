@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".DisplayGravityValue"></activity>
+        <activity android:name=".DisplayStepCounterValue"></activity>
+        <activity android:name=".StepCounterFeatures" />
+        <activity android:name=".DisplayLinearAccelerationValue" />
+        <activity android:name=".LinearAccelerationFeatures" />
+        <activity android:name=".DisplayGyroscopeValue" />
+        <activity android:name=".GyroscopeFeatures" />
+        <activity android:name=".DisplayGravityValue" />
         <activity android:name=".GravityFeatures" />
         <activity android:name=".DisplayAccelerometerValue" />
         <activity android:name=".AccelerometerFeatures" />

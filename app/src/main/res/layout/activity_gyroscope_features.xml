@@ -7,14 +7,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="@string/step_counter_features_text"
+        android:text="@string/gyroscope_features_text"
         android:textColor="@color/white"
         android:background="@color/black"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textStyle="italic"/>
     <TextView
-        android:id="@+id/stepcounterfeatureslist"
+        android:id="@+id/gyroscopefeatureslist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -23,6 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/value_text"
-        android:onClick="OpenDisplayStepCounterValue"/>
+        android:onClick="OpenDisplayGyroscopeValue"/>
 
 </LinearLayout>
