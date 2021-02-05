@@ -33,3 +33,4 @@ public class PositionSensor extends AppCompatActivity {
         Intent intent = new Intent(this, Proximity.class);
         startActivity(intent);
     }
+}
