@@ -35,6 +35,10 @@
     <string name="step_counter_sensor_list_text">Lista Sensori Conta Passi</string>
     <string name="step_counter_features_text">Caratteristiche Sensore Conta Passi</string>
     <string name="step_counter_display_text">Valore Sensore Conta Passi</string>
+    <string name="geomagnetic_rotation_sensor_list_text">Lista Sensori di Rotazione Geomagnetica</string>
+    <string name="magnetic_field_sensor_list_text">Lista Sensori di Campo Magnetico</string>
+    <string name="orientation_sensor_list_text">Lista Sensori di Orientamento</string>
+    <string name="proximity_sensor_list_text">Lista Sensori di Prossimità</string>
     <string name="btn_text_select_saved_value">Visualizza Valore Salvato Per Tipologia Sensore</string>
     <string name="type_sensor_list_text">Selettore Tipologia Sensore</string>
     <string name="sensor_type_selector_text">Seleziona la Tipologia del Sensore:</string>
