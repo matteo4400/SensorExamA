@@ -41,10 +41,6 @@
         <activity android:name=".SelectTypeSavedValue" />
         <activity android:name=".DisplaySelectedValue" />
         <activity android:name=".EnvironmentSelectSavedValue" />
-        <activity android:name=".DisplayHumidityValue" />
-        <activity android:name=".DisplayPressureValue" />
-        <activity android:name=".DisplayTemperatureValue" />
-        <activity android:name=".DisplayLightValue" />
         <activity android:name=".HumidityFeatures" />
         <activity android:name=".PressureFeatures" />
         <activity android:name=".TemperatureFeatures" />
