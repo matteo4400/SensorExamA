@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GeorotationFeatures">
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/georotation_features_text"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/georotationfeatureslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_text"
+        android:onClick="OpenDisplayGeorotationValue"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

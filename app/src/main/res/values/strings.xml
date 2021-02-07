@@ -65,4 +65,8 @@
     <string name="pressure_display_text">Valore Sensore Pressione</string>
     <string name="humidity_display_text">Valore Sensore di Umidità</string>
     <string name="motion_selector_text">Seleziona la Tipologia di Sensore di Movimento</string>
+    <string name="georotation_features_text">Caratteristiche Sensore Rotazione Geomagnetica</string>
+    <string name="magnetic_field_features_text">Caratteristiche Sensore Campo Magnetico</string>
+    <string name="orientation_features_text">Carattestiche Sensore Orientamento</string>
+    <string name="proximity_features_text">Caratteristiche Sensore Prossimità</string>
 </resources>
