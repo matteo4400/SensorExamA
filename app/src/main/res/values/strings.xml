@@ -57,7 +57,6 @@
     <string name="pressure_features_text">Caratteristiche Sensore Pressione</string>
     <string name="humidity_sensor_list_text">Lista Sensori Umidità</string>
     <string name="humidity_features_text">Caratteristiche Sensore di Umidità</string>
-    <string name="value_text">Visualizza Valore Attuale Sensore</string>
     <string name="safe_button_text">Salva il valore attuale</string>
     <string name="read_button_text">Visualizza valore salvato</string>
     <string name="temperature_display_text">Valore Sensore di Temperatura</string>
@@ -69,4 +68,7 @@
     <string name="magnetic_field_features_text">Caratteristiche Sensore Campo Magnetico</string>
     <string name="orientation_features_text">Carattestiche Sensore Orientamento</string>
     <string name="proximity_features_text">Caratteristiche Sensore Prossimità</string>
+    <string name="proximity_display_text">Valore Sensore Prossimità</string>
+    <string name="georotation_display_text">Valori Sensore Rotazione Geomagnetica</string>
+    <string name="magnetic_field_display_text">Valori Sensore Campo Magnetico </string>
 </resources>
