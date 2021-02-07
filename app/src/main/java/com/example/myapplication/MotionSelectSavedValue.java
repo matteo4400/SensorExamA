@@ -52,11 +52,6 @@ public class MotionSelectSavedValue extends AppCompatActivity {
                     startActivity(intent);
                     break;
 
-                case R.id.radio_step_counter:
-                    String stepcounter_file_name = "mystepcountervalue.txt";
-                    intent.putExtra(EXTRA_MESSAGE, stepcounter_file_name);
-                    startActivity(intent);
-                    break;
             }
 
         }

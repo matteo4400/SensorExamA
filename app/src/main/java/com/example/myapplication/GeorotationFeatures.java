@@ -64,7 +64,7 @@ public class GeorotationFeatures extends AppCompatActivity implements SensorEven
     public void onSensorChanged(SensorEvent event) {
         float georotation_value_x = event.values[0];
         float georotation_value_y = event.values[1];
-        float georotation_value_z = event.values[3];
+        float georotation_value_z = event.values[2];
         displayvalue.setText("@string/georotation_value_x"+georotation_value_x+"\n"+"Sensor value o y axis : "+georotation_value_y+"\n"+"Sensor value on z axis : "+georotation_value_z+"\n");
     }
 

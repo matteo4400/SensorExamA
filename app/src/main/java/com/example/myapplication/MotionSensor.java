@@ -33,8 +33,4 @@ public class MotionSensor extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void OpenMotionStepCounterSensors(View view) {
-        Intent intent = new Intent(this, StepCounterSensors.class);
-        startActivity(intent);
-    }
 }

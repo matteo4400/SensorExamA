@@ -19,9 +19,38 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/gyroscope_display_text"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/displaygyroscopevalue"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"/>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="OpenDisplayGyroscopeValue"/>
+        android:id ="@+id/save_button"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick ="BtnSafe"
+        android:text ="@string/safe_button_text" />
+    <Button
+        android:id ="@+id/read_button"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick ="BtnRead"
+        android:text ="@string/read_button_text" />
+    <TextView
+        android:id="@+id/gyroscopesavedvalue"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"/>
 
 </LinearLayout>

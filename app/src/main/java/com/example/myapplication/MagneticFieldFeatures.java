@@ -64,7 +64,7 @@ public class MagneticFieldFeatures extends AppCompatActivity implements SensorEv
     public void onSensorChanged(SensorEvent event) {
         float magnetic_value_x = event.values[0];
         float magnetic_value_y = event.values[1];
-        float magnetic_value_z = event.values[3];
+        float magnetic_value_z = event.values[2];
         displayvalue.setText("Sensor value on x axis"+magnetic_value_x+"\n"+"Sensor value on y axis : "+magnetic_value_y+"\n"+"Sensor value on z axis : "+magnetic_value_z+"\n");
     }
 
