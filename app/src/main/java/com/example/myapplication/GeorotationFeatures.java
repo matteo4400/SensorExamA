@@ -65,7 +65,11 @@ public class GeorotationFeatures extends AppCompatActivity implements SensorEven
         float georotation_value_x = event.values[0];
         float georotation_value_y = event.values[1];
         float georotation_value_z = event.values[2];
-        displayvalue.setText("@string/georotation_value_x"+georotation_value_x+"\n"+"Sensor value o y axis : "+georotation_value_y+"\n"+"Sensor value on z axis : "+georotation_value_z+"\n");
+        Intent intent = getIntent();
+        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
+        displayvalue.setText("Sensor n° " + sensor_number + "value on x axis : " + georotation_value_x + "\n"
+                +"Sensor n° " + sensor_number + "value on y axis : " + georotation_value_y + "\n"
+                +"Sensor n° " + sensor_number + "value on z axis : " + georotation_value_z + "\n");
     }
 
     @Override

@@ -71,4 +71,5 @@
     <string name="proximity_display_text">Valore Sensore Prossimità</string>
     <string name="georotation_display_text">Valori Sensore Rotazione Geomagnetica</string>
     <string name="magnetic_field_display_text">Valori Sensore Campo Magnetico </string>
+    <string name="position_selector_text">Seleziona la Tipologia di Sensore di Posizione</string>
 </resources>

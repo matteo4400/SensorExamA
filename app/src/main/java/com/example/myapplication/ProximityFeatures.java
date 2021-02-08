@@ -63,7 +63,9 @@ public class ProximityFeatures extends AppCompatActivity implements SensorEventL
     @Override
     public void onSensorChanged(SensorEvent event) {
         float proximity_value = event.values[0];
-        displayvalue.setText("Sensor value : " + proximity_value + "\n");
+        Intent intent = getIntent();
+        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
+        displayvalue.setText("Sensor n° " + sensor_number + "value : " + proximity_value + "\n");
     }
 
     @Override

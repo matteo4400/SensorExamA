@@ -60,12 +60,16 @@ public class MagneticFieldFeatures extends AppCompatActivity implements SensorEv
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
-    @Override
+   @Override
     public void onSensorChanged(SensorEvent event) {
         float magnetic_value_x = event.values[0];
         float magnetic_value_y = event.values[1];
         float magnetic_value_z = event.values[2];
-        displayvalue.setText("Sensor value on x axis"+magnetic_value_x+"\n"+"Sensor value on y axis : "+magnetic_value_y+"\n"+"Sensor value on z axis : "+magnetic_value_z+"\n");
+       Intent intent = getIntent();
+       int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
+        displayvalue.setText("Sensor n° " + sensor_number + "value on x axis : " + magnetic_value_x + "\n"
+                +"Sensor n° " + sensor_number + "value on y axis : " + magnetic_value_y + "\n"
+                +"Sensor n° " + sensor_number + "value on z axis : " + magnetic_value_z + "\n");
     }
 
     @Override
