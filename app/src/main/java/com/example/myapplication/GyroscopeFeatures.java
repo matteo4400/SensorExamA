@@ -63,7 +63,7 @@ public class GyroscopeFeatures extends AppCompatActivity implements SensorEventL
         float gyroscope_value_x = event.values[0];
         float gyroscope_value_y = event.values[1];
         float gyroscope_value_z = event.values[2];
-        displayvalue.setText("Sensor value on x axis"+gyroscope_value_x+"\n"+
+        displayvalue.setText("Sensor value on x axis :"+gyroscope_value_x+"\n"+
                 "Sensor value on y axis : "+gyroscope_value_y+"\n"+
                 "Sensor value on z axis : "+gyroscope_value_z+"\n");
     }

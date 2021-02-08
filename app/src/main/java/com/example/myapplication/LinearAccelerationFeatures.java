@@ -63,7 +63,7 @@ public class LinearAccelerationFeatures extends AppCompatActivity implements Sen
         float linear_acceleration_value_x = event.values[0];
         float linear_acceleration_value_y = event.values[1];
         float linear_acceleration_value_z = event.values[2];
-        displayvalue.setText("Sensor value on x axis"+linear_acceleration_value_x+"\n"+
+        displayvalue.setText("Sensor value on x axis :"+linear_acceleration_value_x+"\n"+
                 "Sensor value on y axis : "+linear_acceleration_value_y+"\n"+
                 "Sensor value on z axis : "+linear_acceleration_value_z+"\n");
     }
@@ -99,7 +99,7 @@ public class LinearAccelerationFeatures extends AppCompatActivity implements Sen
     public void BtnRead(View view) {
         //Reading test from file
         try{
-            FileInputStream filein = openFileInput("myglinearaccelerationvalue.txt");
+            FileInputStream filein = openFileInput("mylinearaccelerationvalue.txt");
             InputStreamReader inputread = new InputStreamReader(filein);
 
             char [] inputBuffer = new char[read_block_size];

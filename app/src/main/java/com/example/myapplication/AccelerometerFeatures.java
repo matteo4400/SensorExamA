@@ -21,6 +21,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.List;
 
+
+
 public class AccelerometerFeatures extends AppCompatActivity implements SensorEventListener {
 
     public final static String EXTRA_MESSAGE = "myApplication.MESSAGE";
@@ -33,9 +35,9 @@ public class AccelerometerFeatures extends AppCompatActivity implements SensorEv
 
     private Sensor Accelerometersensor;
 
-    static final int read_block_size = 100;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    static final int read_block_size = 100;
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,14 +62,17 @@ public class AccelerometerFeatures extends AppCompatActivity implements SensorEv
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onSensorChanged(SensorEvent event) {
+        if(event.sensor.getName() == Accelerometersensor.getName()){
         float acceleration_value_x = event.values[0];
         float acceleration_value_y = event.values[1];
         float acceleration_value_z = event.values[2];
-        displayvalue.setText("Sensor value on x axis"+acceleration_value_x+"\n"+
+        displayvalue.setText("Sensor value on x axis :"+acceleration_value_x+"\n"+
                 "Sensor value on y axis : "+acceleration_value_y+"\n"+
                 "Sensor value on z axis : "+acceleration_value_z+"\n");
+        }
     }
 
     @Override
