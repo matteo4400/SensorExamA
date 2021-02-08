@@ -55,7 +55,7 @@ public class Light extends AppCompatActivity {
              else {
                 LinearLayout ll = new LinearLayout(this);
                 final TextView textview = new TextView(this);
-                textview.setText("Sorry, there are no light sensors on your device");
+                textview.setText("Sorry, there are no light sensors on your device!");
                 textview.setLayoutParams(params);
                 ll.addView(textview);
                 lm.addView(ll);

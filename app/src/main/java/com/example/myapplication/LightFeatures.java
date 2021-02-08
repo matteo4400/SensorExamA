@@ -61,7 +61,9 @@ public class LightFeatures extends AppCompatActivity implements SensorEventListe
     @Override
     public void onSensorChanged(SensorEvent event) {
         float lux_value = event.values[0];
-        displayvalue.setText("Sensor value : " + lux_value + "\n");
+        Intent intent = getIntent();
+        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
+        displayvalue.setText("Sensor n°" + sensor_number + " value : " + lux_value + " lx" + "\n");
     }
 
     @Override

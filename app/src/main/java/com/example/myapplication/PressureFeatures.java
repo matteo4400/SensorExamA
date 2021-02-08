@@ -59,7 +59,9 @@ public class PressureFeatures extends AppCompatActivity implements SensorEventLi
     @Override
     public void onSensorChanged(SensorEvent event) {
         float pressure_value = event.values[0];
-        displayvalue.setText("Sensor value : " + pressure_value + "\n");
+        Intent intent = getIntent();
+        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
+        displayvalue.setText("Sensor n°" + sensor_number + " value : " + pressure_value + " mbar" + "\n");
     }
 
     @Override
