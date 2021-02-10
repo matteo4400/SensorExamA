@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".Settings"></activity>
         <activity android:name=".ProximityFeatures" />
         <activity android:name=".MagneticFieldFeatures" />
         <activity android:name=".GeorotationFeatures" />
         <activity android:name=".Proximity" />
-        <activity android:name=".Orientation" />
         <activity android:name=".MagneticField" />
         <activity android:name=".GeomagneticRotation" />
         <activity android:name=".LinearAccelerationFeatures" />

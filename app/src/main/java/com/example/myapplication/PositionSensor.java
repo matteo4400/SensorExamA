@@ -24,11 +24,6 @@ public class PositionSensor extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void OpenOrientationSensors(View view) {
-        Intent intent = new Intent(this, Orientation.class);
-        startActivity(intent);
-    }
-
     public void OpenProximitySensors(View view) {
         Intent intent = new Intent(this, Proximity.class);
         startActivity(intent);

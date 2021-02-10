@@ -27,11 +27,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/orientation_text"
-        android:onClick="OpenOrientationSensors"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/proximity_text"
         android:onClick="OpenProximitySensors"/>
 

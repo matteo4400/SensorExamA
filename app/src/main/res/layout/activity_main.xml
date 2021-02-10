@@ -35,5 +35,10 @@
         android:layout_height="wrap_content"
         android:onClick="OpenSelectTypeSavedValue"
         android:text="@string/btn_text_select_saved_value" />
+    <Button
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:onClick="OpenSettings"
+        android:text="@string/settings" />
 
 </LinearLayout>

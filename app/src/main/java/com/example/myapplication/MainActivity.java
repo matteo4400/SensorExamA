@@ -18,10 +18,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void OpenSelectTypeSavedValue(View view ) {
-        Intent intent = new Intent(this, SelectTypeSavedValue.class);
-        startActivity(intent);
-    }
     public void OpenMotionSensor(View view) {
         Intent intent = new Intent(this, MotionSensor.class);
         startActivity(intent);
@@ -29,6 +25,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void OpenPositionSensor(View view) {
         Intent intent = new Intent(this, PositionSensor.class);
+        startActivity(intent);
+    }
+
+    public void OpenSelectTypeSavedValue(View view ) {
+        Intent intent = new Intent(this, SelectTypeSavedValue.class);
+        startActivity(intent);
+    }
+
+    public void OpenSettings(View view ) {
+        Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
 }
