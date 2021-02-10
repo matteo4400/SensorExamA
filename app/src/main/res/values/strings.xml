@@ -83,7 +83,7 @@
     <string name="vendor">Sensor vendor :\u0020</string>
     <string name="version">Sensor version :\u0020</string>
     <string name="resolution">Sensor resolution :\u0020</string>
-    <string name="range">Sensor maximum range :\u0200</string>
+    <string name="range">Sensor maximum range :\u0020</string>
     <string name="power">Sensor power requirements :\u0020</string>
     <string name="number">Sensor n°\u0020</string>
     <string name="value">value :\u0020</string>
