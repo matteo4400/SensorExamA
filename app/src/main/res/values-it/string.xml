@@ -66,9 +66,22 @@
     <string name="view_value_text">Visualizza</string>
     <string name="settings">Impostazioni</string>
 
-    <string name="temperature_sensor_number">"Sensore di temperatura ambientale numero: "</string>
-
-
+    <string name="sensor_number">"Sensore di temperatura ambientale numero: "</string>
+    <string name="error_message">"Mi spiace, non ci sono sensori della tipologia indicata in questo dispositivo!"</string>
+    <string name="name">Nome del sensore :\u0020 </string>
+    <string name="type">Tipologia del sensore :\u0020 </string>
+    <string name="vendor">Venditore del sensore :\u0020 </string>
+    <string name="version">Versione del sensore :\u0020</string>
+    <string name="resolution">Risoluzione del sensore :\u0020 </string>
+    <string name="range">Massimo range del sensore :\u0020 </string>
+    <string name="power">Requisiti di potenza del sensore :\u0020 </string>
+    <string name="number">Sensore n°\u0020</string>
+    <string name="value">\u0020valore :\u0020</string>
+    <string name="values">\u0020valori :\u0020</string>
+    <string name="value_x">\u0020valore lungo x :\u0020</string>
+    <string name="value_y">\u0020valore lungo y :\u0020</string>
+    <string name="value_z">\u0020valore lungo z :\u0020</string>
+    <string name="correct_save">"Valore Salvato Correttamente!"</string>
 
     <string name="selected_value_display_text">Visualizzazione Valore Salvato</string>//uguale a read_button_text
 

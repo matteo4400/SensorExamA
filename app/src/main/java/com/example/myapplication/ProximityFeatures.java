@@ -45,13 +45,13 @@ public class ProximityFeatures extends AppCompatActivity implements SensorEventL
         sensormanager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> ProximityList = sensormanager.getSensorList(Sensor.TYPE_PROXIMITY);
         featureslist = findViewById(R.id.proximityfeatureslist);
-        featureslist.setText("Sensor name: " + ProximityList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + ProximityList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + ProximityList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + ProximityList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + ProximityList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + ProximityList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + ProximityList.get(sensor_index).getPower() );
+        featureslist.setText(getString(R.string.name) + ProximityList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + ProximityList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + ProximityList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + ProximityList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + ProximityList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + ProximityList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + ProximityList.get(sensor_index).getPower() );
         displayvalue = findViewById(R.id.displayproximityvalue);
         Proximitysensor = ProximityList.get(sensor_index);
     }
@@ -65,7 +65,7 @@ public class ProximityFeatures extends AppCompatActivity implements SensorEventL
         float proximity_value = event.values[0];
         Intent intent = getIntent();
         int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
-        displayvalue.setText("Sensor n° " + sensor_number + "value : " + proximity_value + "\n");
+        displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value) + proximity_value + "\n");
     }
 
     @Override
@@ -89,7 +89,7 @@ public class ProximityFeatures extends AppCompatActivity implements SensorEventL
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();

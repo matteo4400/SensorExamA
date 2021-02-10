@@ -44,13 +44,13 @@ public class GyroscopeFeatures extends AppCompatActivity implements SensorEventL
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> GyroscopeList = sensormanager.getSensorList(Sensor.TYPE_GYROSCOPE);
         featureslist = findViewById(R.id.gyroscopefeatureslist);
-        featureslist.setText("Sensor name: " + GyroscopeList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + GyroscopeList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + GyroscopeList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + GyroscopeList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + GyroscopeList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + GyroscopeList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + GyroscopeList.get(sensor_index).getPower());
+        featureslist.setText(getString(R.string.name) + GyroscopeList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + GyroscopeList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + GyroscopeList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + GyroscopeList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + GyroscopeList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + GyroscopeList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + GyroscopeList.get(sensor_index).getPower());
         displayvalue = findViewById(R.id.displaygyroscopevalue);
         Gyroscopesensor = GyroscopeList.get(sensor_index);
     }
@@ -89,7 +89,7 @@ public class GyroscopeFeatures extends AppCompatActivity implements SensorEventL
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();

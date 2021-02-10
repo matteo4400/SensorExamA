@@ -44,13 +44,13 @@ public class GravityFeatures extends AppCompatActivity implements SensorEventLis
         sensormanager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> GravityList = sensormanager.getSensorList(Sensor.TYPE_GRAVITY);
         featureslist = findViewById(R.id.gravityfeatureslist);
-        featureslist.setText("Sensor name: " + GravityList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + GravityList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + GravityList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + GravityList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + GravityList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + GravityList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + GravityList.get(sensor_index).getPower() );
+        featureslist.setText(getString(R.string.name) + GravityList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + GravityList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + GravityList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + GravityList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + GravityList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + GravityList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + GravityList.get(sensor_index).getPower() );
         displayvalue = findViewById(R.id.displaygravityvalue);
         Gravitysensor = GravityList.get(sensor_index);
     }
@@ -89,7 +89,7 @@ public class GravityFeatures extends AppCompatActivity implements SensorEventLis
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -44,7 +44,7 @@ public class AmbientTemperature extends AppCompatActivity {
                 LinearLayout ll = new LinearLayout(this);
                 final Button btn = new Button(this);
                 btn.setId(i);
-                btn.setText("Sensore di temperatura ambientale numero: " + String.valueOf(i + 1));
+                btn.setText(getString(R.string.sensor_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
@@ -53,7 +53,7 @@ public class AmbientTemperature extends AppCompatActivity {
         } else {
             LinearLayout ll = new LinearLayout(this);
             final TextView textview = new TextView(this);
-            textview.setText("Sorry, there are no ambient temperature sensors on your device!");
+            textview.setText(getString(R.string.error_message));
             textview.setLayoutParams(params);
             ll.addView(textview);
             lm.addView(ll);

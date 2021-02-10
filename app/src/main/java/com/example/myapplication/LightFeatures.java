@@ -43,13 +43,13 @@ public class LightFeatures extends AppCompatActivity implements SensorEventListe
         sensormanager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> LightList = sensormanager.getSensorList(Sensor.TYPE_LIGHT);
         featureslist = findViewById(R.id.lightfeatureslist);
-        featureslist.setText("Sensor name: " + LightList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + LightList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + LightList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + LightList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + LightList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + LightList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + LightList.get(sensor_index).getPower() );
+        featureslist.setText(getString(R.string.name)+ LightList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + LightList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + LightList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + LightList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + LightList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + LightList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + LightList.get(sensor_index).getPower() );
         displayvalue = findViewById(R.id.displaylightvalue);
         Lightsensor = LightList.get(sensor_index);
     }

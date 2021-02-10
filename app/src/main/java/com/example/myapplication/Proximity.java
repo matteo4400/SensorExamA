@@ -53,7 +53,7 @@ public class Proximity extends AppCompatActivity {
         } else {
             LinearLayout ll = new LinearLayout(this);
             final TextView textview = new TextView(this);
-            textview.setText("Sorry, there are no proximity sensors on your device");
+            textview.setText(getString(R.string.error_message));
             textview.setLayoutParams(params);
             ll.addView(textview);
             lm.addView(ll);

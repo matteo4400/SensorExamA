@@ -45,13 +45,13 @@ public class GeorotationFeatures extends AppCompatActivity implements SensorEven
         sensormanager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> GeorotationList = sensormanager.getSensorList(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR);
         featureslist = findViewById(R.id.georotationfeatureslist);
-        featureslist.setText("Sensor name: " + GeorotationList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + GeorotationList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + GeorotationList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + GeorotationList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + GeorotationList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + GeorotationList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + GeorotationList.get(sensor_index).getPower() );
+        featureslist.setText(getString(R.string.name) + GeorotationList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + GeorotationList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + GeorotationList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + GeorotationList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + GeorotationList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + GeorotationList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + GeorotationList.get(sensor_index).getPower() );
         displayvalue = findViewById(R.id.displaygeorotationvalue);
         Georotationsensor = GeorotationList.get(sensor_index);
     }
@@ -67,9 +67,9 @@ public class GeorotationFeatures extends AppCompatActivity implements SensorEven
         float georotation_value_z = event.values[2];
         Intent intent = getIntent();
         int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
-        displayvalue.setText("Sensor n° " + sensor_number + "value on x axis : " + georotation_value_x + "\n"
-                +"Sensor n° " + sensor_number + "value on y axis : " + georotation_value_y + "\n"
-                +"Sensor n° " + sensor_number + "value on z axis : " + georotation_value_z + "\n");
+        displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value_x) + georotation_value_x + "\n"
+                +getString(R.string.number) + sensor_number + getString(R.string.value_y) + georotation_value_y + "\n"
+                +getString(R.string.number) + sensor_number + getString(R.string.value_z) + georotation_value_z + "\n");
     }
 
     @Override
@@ -93,7 +93,7 @@ public class GeorotationFeatures extends AppCompatActivity implements SensorEven
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save),Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();

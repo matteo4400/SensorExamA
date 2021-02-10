@@ -41,13 +41,13 @@ public class HumidityFeatures extends AppCompatActivity implements SensorEventLi
         sensormanager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> HumidityList = sensormanager.getSensorList(Sensor.TYPE_RELATIVE_HUMIDITY);
         featureslist = findViewById(R.id.humidityfeatureslist);
-        featureslist.setText("Sensor name: " + HumidityList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + HumidityList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + HumidityList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + HumidityList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + HumidityList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + HumidityList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + HumidityList.get(sensor_index).getPower() );
+        featureslist.setText(getString(R.string.name) + HumidityList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + HumidityList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + HumidityList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + HumidityList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + HumidityList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + HumidityList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + HumidityList.get(sensor_index).getPower() );
         displayvalue = findViewById(R.id.displayhumidityvalue);
         Humiditysensor = HumidityList.get(sensor_index);
     }
@@ -85,7 +85,7 @@ public class HumidityFeatures extends AppCompatActivity implements SensorEventLi
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();

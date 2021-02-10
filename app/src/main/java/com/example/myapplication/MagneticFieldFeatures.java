@@ -45,13 +45,13 @@ public class MagneticFieldFeatures extends AppCompatActivity implements SensorEv
         sensormanager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> MagneticFieldList = sensormanager.getSensorList(Sensor.TYPE_MAGNETIC_FIELD);
         featureslist = findViewById(R.id.magneticfieldfeatureslist);
-        featureslist.setText("Sensor name: " + MagneticFieldList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + MagneticFieldList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + MagneticFieldList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + MagneticFieldList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + MagneticFieldList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + MagneticFieldList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + MagneticFieldList.get(sensor_index).getPower() );
+        featureslist.setText(getString(R.string.name) + MagneticFieldList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + MagneticFieldList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + MagneticFieldList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + MagneticFieldList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + MagneticFieldList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + MagneticFieldList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + MagneticFieldList.get(sensor_index).getPower() );
         displayvalue = findViewById(R.id.displaymagneticvalue);
         MagneticFieldsensor = MagneticFieldList.get(sensor_index);
     }
@@ -67,9 +67,9 @@ public class MagneticFieldFeatures extends AppCompatActivity implements SensorEv
         float magnetic_value_z = event.values[2];
        Intent intent = getIntent();
        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
-        displayvalue.setText("Sensor n° " + sensor_number + "value on x axis : " + magnetic_value_x + "\n"
-                +"Sensor n° " + sensor_number + "value on y axis : " + magnetic_value_y + "\n"
-                +"Sensor n° " + sensor_number + "value on z axis : " + magnetic_value_z + "\n");
+        displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value_x) + magnetic_value_x + "uT"+"\n"
+                +getString(R.string.number) + sensor_number + getString(R.string.value_y) + magnetic_value_y + "uT"+"\n"
+                +getString(R.string.number) + sensor_number + getString(R.string.value_x) + magnetic_value_z + "uT"+"\n");
     }
 
     @Override
@@ -93,7 +93,7 @@ public class MagneticFieldFeatures extends AppCompatActivity implements SensorEv
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();

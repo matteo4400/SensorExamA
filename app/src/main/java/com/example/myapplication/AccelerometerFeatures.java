@@ -47,13 +47,13 @@ public class AccelerometerFeatures extends AppCompatActivity implements SensorEv
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> AccelerometerList = sensormanager.getSensorList(Sensor.TYPE_ACCELEROMETER);
         featureslist = findViewById(R.id.accelerometerfeatureslist);
-        featureslist.setText("Sensor name: " + AccelerometerList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + AccelerometerList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + AccelerometerList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + AccelerometerList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + AccelerometerList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + AccelerometerList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + AccelerometerList.get(sensor_index).getPower());
+        featureslist.setText(getString(R.string.name) + AccelerometerList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + AccelerometerList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + AccelerometerList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + AccelerometerList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + AccelerometerList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + AccelerometerList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + AccelerometerList.get(sensor_index).getPower());
         displayvalue = findViewById(R.id.displayaccelerometervalue);
         Accelerometersensor = AccelerometerList.get(sensor_index);
     }
@@ -96,7 +96,7 @@ public class AccelerometerFeatures extends AppCompatActivity implements SensorEv
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         }
         catch (Exception e) {

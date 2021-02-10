@@ -44,13 +44,13 @@ public class LinearAccelerationFeatures extends AppCompatActivity implements Sen
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> LinearAccelerationList = sensormanager.getSensorList(Sensor.TYPE_LINEAR_ACCELERATION);
         featureslist = findViewById(R.id.linearaccelerationfeatureslist);
-        featureslist.setText("Sensor name: " + LinearAccelerationList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + LinearAccelerationList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + LinearAccelerationList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + LinearAccelerationList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + LinearAccelerationList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + LinearAccelerationList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + LinearAccelerationList.get(sensor_index).getPower());
+        featureslist.setText(getString(R.string.name) + LinearAccelerationList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + LinearAccelerationList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + LinearAccelerationList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + LinearAccelerationList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + LinearAccelerationList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + LinearAccelerationList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + LinearAccelerationList.get(sensor_index).getPower());
         displayvalue = findViewById(R.id.displaylinearaccelerationvalue);
         LinearAccelerationsensor = LinearAccelerationList.get(sensor_index);
     }
@@ -89,7 +89,7 @@ public class LinearAccelerationFeatures extends AppCompatActivity implements Sen
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();

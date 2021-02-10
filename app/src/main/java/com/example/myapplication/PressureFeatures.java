@@ -41,13 +41,13 @@ public class PressureFeatures extends AppCompatActivity implements SensorEventLi
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> PressureList = sensormanager.getSensorList(Sensor.TYPE_PRESSURE);
         featureslist = findViewById(R.id.pressurefeatureslist);
-        featureslist.setText("Sensor name: " + PressureList.get(sensor_index).getName() + "\n"
-                + "Sensor type : " + PressureList.get(sensor_index).getStringType() + "\n"
-                + "Sensor vendor : " + PressureList.get(sensor_index).getVendor() + "\n"
-                + "Sensor version : " + PressureList.get(sensor_index).getVersion() + "\n"
-                + "Sensor resolution : " + PressureList.get(sensor_index).getResolution() + "\n"
-                + "Sensor Maximum Range : " + PressureList.get(sensor_index).getMaximumRange() + "\n"
-                + "Sensor Power Requirements : " + PressureList.get(sensor_index).getPower());
+        featureslist.setText(getString(R.string.name) + PressureList.get(sensor_index).getName() + "\n"
+                + getString(R.string.type) + PressureList.get(sensor_index).getStringType() + "\n"
+                + getString(R.string.vendor) + PressureList.get(sensor_index).getVendor() + "\n"
+                + getString(R.string.version) + PressureList.get(sensor_index).getVersion() + "\n"
+                + getString(R.string.resolution) + PressureList.get(sensor_index).getResolution() + "\n"
+                + getString(R.string.range) + PressureList.get(sensor_index).getMaximumRange() + "\n"
+                + getString(R.string.power) + PressureList.get(sensor_index).getPower());
         displayvalue = findViewById(R.id.displaypressurevalue);
         Pressuresensor = PressureList.get(sensor_index);
     }
@@ -85,7 +85,7 @@ public class PressureFeatures extends AppCompatActivity implements SensorEventLi
             outputwriter.close();
 
             //Display file save message
-            Toast.makeText(getBaseContext(), "Valore Salvato Correttamente!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.correct_save), Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             e.printStackTrace();
