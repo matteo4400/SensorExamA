@@ -66,7 +66,17 @@
     <string name="view_value_text">Display</string>
     <string name="settings">Settings</string>
 
-    <string name="sensor_number">"Ambient sensor temperature number: "</string>
+    <string name="temperature_number">"Ambient temperature sensor number: "</string>
+    <string name="light_number">Ambient light sensor number: </string>
+    <string name="pressure_number">Ambient pressure sensor number: </string>
+    <string name="humidity_number">Ambient humidity sensor number: </string>
+    <string name="accelerometer_number">Accelerometer sensor number: </string>
+    <string name="gravity_number">Gravity sensor number: </string>
+    <string name="gyroscope_number">Gyroscope sensor number: </string>
+    <string name="linear_acceleration_number">Linear acceleration sensor number: </string>
+    <string name="georotation_number">Geomagnetic rotation sensor number: </string>
+    <string name="magnetic_field_number">Magnetic field sensor number: </string>
+    <string name="proximity_number">Proximity sensor number: </string>
     <string name="error_message">"Sorry, there aren't sensors of this type on your device!"</string>
     <string name="name">Sensor name :\u0020 </string>
     <string name="type">Sensor type :\u0020 </string>

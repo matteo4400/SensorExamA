@@ -61,7 +61,7 @@ public class TemperatureFeatures extends AppCompatActivity implements SensorEven
         float temperature_value = event.values[0];
         Intent intent = getIntent();
         int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
-        displayvalue.setText("Sensor n°" + sensor_number + " value : " + temperature_value + " °C" + "\n");
+        displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value) + temperature_value + " °C" + "\n");
     }
 
     @Override

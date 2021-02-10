@@ -44,7 +44,7 @@ public class GravitySensors extends AppCompatActivity {
                 LinearLayout ll = new LinearLayout(this);
                 final Button btn = new Button(this);
                 btn.setId(i);
-                btn.setText("Sensore Gravità numero: " + String.valueOf(i + 1));
+                btn.setText(getString(R.string.gravity_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);

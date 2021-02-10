@@ -69,9 +69,9 @@ public class AccelerometerFeatures extends AppCompatActivity implements SensorEv
         float acceleration_value_x = event.values[0];
         float acceleration_value_y = event.values[1];
         float acceleration_value_z = event.values[2];
-        displayvalue.setText("Sensor value on x axis :"+acceleration_value_x+"\n"+
-                "Sensor value on y axis : "+acceleration_value_y+"\n"+
-                "Sensor value on z axis : "+acceleration_value_z+"\n");
+        displayvalue.setText(getString(R.string.value_x)+acceleration_value_x+"\n"+
+                getString(R.string.value_y)+acceleration_value_y+"\n"+
+                getString(R.string.value_z)+acceleration_value_z+"\n");
         }
     }
 

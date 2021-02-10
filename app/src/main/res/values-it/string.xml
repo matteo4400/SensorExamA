@@ -66,7 +66,17 @@
     <string name="view_value_text">Visualizza</string>
     <string name="settings">Impostazioni</string>
 
-    <string name="sensor_number">"Sensore di temperatura ambientale numero: "</string>
+    <string name="temperature_number">"Sensore di temperatura ambientale numero: "</string>
+    <string name="light_number">Sensore di luminosità ambientale numero: </string>
+    <string name="pressure_number">Sensore pressione ambientale numero: </string>
+    <string name="humidity_number">Sensore umidità ambientale numero: </string>
+    <string name="accelerometer_number">Sensore accelerometro numero: </string>
+    <string name="gravity_number">Sensore di gravità numero: </string>
+    <string name="gyroscope_number">Sensore giroscopio numero: </string>
+    <string name="linear_acceleration_number">Sensore di accelerazione lineare numero: </string>
+    <string name="georotation_number">Sensore di rotazione geomagnetica numero: </string>
+    <string name="magnetic_field_number">Sensore di campo magnetico numero: </string>
+    <string name="proximity_number">Sensore di prossimità numero: </string>
     <string name="error_message">"Mi spiace, non ci sono sensori della tipologia indicata in questo dispositivo!"</string>
     <string name="name">Nome del sensore :\u0020 </string>
     <string name="type">Tipologia del sensore :\u0020 </string>

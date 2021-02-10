@@ -44,7 +44,7 @@ public class LinearAccelerationSensors extends AppCompatActivity {
                 LinearLayout ll = new LinearLayout(this);
                 final Button btn = new Button(this);
                 btn.setId(i);
-                btn.setText("Sensore di Accelerazione Lineare numero: " + String.valueOf(i + 1));
+                btn.setText(getString(R.string.linear_acceleration_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);

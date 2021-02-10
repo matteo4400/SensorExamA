@@ -44,7 +44,7 @@ public class AmbientTemperature extends AppCompatActivity {
                 LinearLayout ll = new LinearLayout(this);
                 final Button btn = new Button(this);
                 btn.setId(i);
-                btn.setText(getString(R.string.sensor_number) + String.valueOf(i + 1));
+                btn.setText(getString(R.string.temperature_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
