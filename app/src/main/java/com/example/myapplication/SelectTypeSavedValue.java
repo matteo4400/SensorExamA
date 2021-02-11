@@ -15,13 +15,13 @@ public class SelectTypeSavedValue extends AppCompatActivity {
         setContentView(R.layout.activity_select_type_saved_value);
     }
 
-    public void OpenDisplaySelectedTypeMenù(View view) {
+    public void OpenDisplaySelectedType(View view) {
         RadioGroup radiogroup = (RadioGroup) findViewById(R.id.sensor_type_radio_group);
         Intent intent = new Intent();
         int id = radiogroup.getCheckedRadioButtonId();
         if (id == -1) {
             //no item --> Toast Display
-            Toast.makeText(getBaseContext(), "Effettuare una scelta prima di procedere!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),getString(R.string.choose_type), Toast.LENGTH_SHORT).show();
             return;
         } else {
             switch (id) {

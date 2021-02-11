@@ -69,9 +69,11 @@ public class AccelerometerFeatures extends AppCompatActivity implements SensorEv
         float acceleration_value_x = event.values[0];
         float acceleration_value_y = event.values[1];
         float acceleration_value_z = event.values[2];
-        displayvalue.setText(getString(R.string.value_x)+acceleration_value_x+"\n"+
-                getString(R.string.value_y)+acceleration_value_y+"\n"+
-                getString(R.string.value_z)+acceleration_value_z+"\n");
+        Intent intent = getIntent();
+        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
+        displayvalue.setText(getString(R.string.number) +sensor_number + getString(R.string.value_x) + acceleration_value_x+"\n"+
+                getString(R.string.number) + sensor_number + getString(R.string.value_y) + acceleration_value_y+"\n"+
+                getString(R.string.number) + sensor_number + getString(R.string.value_z) + acceleration_value_z+"\n");
         }
     }
 

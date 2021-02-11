@@ -44,6 +44,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next_operation_btn_text"
-        android:onClick="OpenDisplaySelectedTypeMenù"/>
+        android:onClick="OpenDisplaySelectedType"/>
 
 </LinearLayout>

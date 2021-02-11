@@ -86,12 +86,14 @@
     <string name="range">Sensor maximum range :\u0020</string>
     <string name="power">Sensor power requirements :\u0020</string>
     <string name="number">Sensor n°\u0020</string>
-    <string name="value">value :\u0020</string>
-    <string name="values">values :\u0020</string>
-    <string name="value_x">value on x axis :\u0020</string>
-    <string name="value_y">value on y axis :\u0020</string>
-    <string name="value_z">value on z axis :\u0020</string>
+    <string name="value">\u0020value :\u0020</string>
+    <string name="values">\u0020values :\u0020</string>
+    <string name="value_x">\u0020value on x axis :\u0020</string>
+    <string name="value_y">\u0020value on y axis :\u0020</string>
+    <string name="value_z">\u0020value on z axis :\u0020</string>
     <string name="correct_save">"Correctly Saved Value!"</string>
+    <string name="choose_type">Make a choice before proceeding!</string>
+    <string name="error_display">Sorry, there are no values currently saved for this sensor category!</string>
 
 
 

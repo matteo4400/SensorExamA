@@ -69,7 +69,7 @@ public class MagneticFieldFeatures extends AppCompatActivity implements SensorEv
        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
         displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value_x) + magnetic_value_x + "uT"+"\n"
                 +getString(R.string.number) + sensor_number + getString(R.string.value_y) + magnetic_value_y + "uT"+"\n"
-                +getString(R.string.number) + sensor_number + getString(R.string.value_x) + magnetic_value_z + "uT"+"\n");
+                +getString(R.string.number) + sensor_number + getString(R.string.value_z) + magnetic_value_z + "uT"+"\n");
     }
 
     @Override

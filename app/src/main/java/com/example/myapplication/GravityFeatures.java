@@ -63,9 +63,11 @@ public class GravityFeatures extends AppCompatActivity implements SensorEventLis
         float gravity_value_x = event.values[0];
         float gravity_value_y = event.values[1];
         float gravity_value_z = event.values[2];
-        displayvalue.setText("Sensor value on x axis :"+gravity_value_x+"\n"+
-                "Sensor value on y axis : "+gravity_value_y+"\n"+
-                "Sensor value on z axis : "+gravity_value_z+"\n");
+        Intent intent = getIntent();
+        int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
+        displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value_x) + gravity_value_x+"\n"+
+                getString(R.string.number) + sensor_number + getString(R.string.value_y) + gravity_value_y+"\n"+
+                getString(R.string.number) + sensor_number + getString(R.string.value_z) + gravity_value_z+"\n");
     }
 
     @Override

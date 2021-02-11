@@ -23,7 +23,7 @@ public class DisplaySelectedValue extends AppCompatActivity {
         File file = this.getFileStreamPath(selected_file_name);
         if ( !file.exists() ) {
             tv = findViewById(R.id.displayselectedvalue);
-            tv.setText("Sorry, there are no values currently saved for this sensor category!");
+            tv.setText(getString(R.string.error_display));
         } else {
             //Reading test from file
             try {

@@ -92,6 +92,9 @@
     <string name="value_y">\u0020valore lungo y :\u0020</string>
     <string name="value_z">\u0020valore lungo z :\u0020</string>
     <string name="correct_save">"Valore Salvato Correttamente!"</string>
+    <string name="choose_type">Effettuare una scelta prima di procedere!</string>
+    <string name="error_display">Mi spiace, al momento non ci sono valori salvati per questa categoria!</string>
+
 
     <string name="selected_value_display_text">Visualizzazione Valore Salvato</string>//uguale a read_button_text
 
