@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/black"
-        android:text="@string/app_name"
+        android:text="@string/main_text"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="26dp"
