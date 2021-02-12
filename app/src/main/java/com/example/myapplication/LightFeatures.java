@@ -55,6 +55,10 @@ public class LightFeatures extends AppCompatActivity implements SensorEventListe
     }
 
     @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    }
+
+    @Override
     public void onSensorChanged(SensorEvent event) {
         float lux_value = event.values[0];
         Intent intent = getIntent();

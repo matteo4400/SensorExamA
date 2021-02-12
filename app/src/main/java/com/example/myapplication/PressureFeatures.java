@@ -53,6 +53,10 @@ public class PressureFeatures extends AppCompatActivity implements SensorEventLi
     }
 
     @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    }
+
+    @Override
     public void onSensorChanged(SensorEvent event) {
         float pressure_value = event.values[0];
         Intent intent = getIntent();
