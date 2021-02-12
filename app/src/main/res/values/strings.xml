@@ -65,6 +65,14 @@
     <string name="next_operation_btn_text">Go on</string>
     <string name="view_value_text">Display</string>
     <string name="settings">Settings</string>
+    <string name="report_bug">Send us an e-mail to report any bug!</string>
+    <string name="email_address">team.pannia@gmail.com</string>
+    <string name="email_subject">Bug report on Sensometer</string>
+    <string name="email_text_hint">Insert the e-mail text</string>
+    <string name="web_follow">Follow us on our web page!</string>
+    <string name="follow">Follow!</string>
+    <string name="send">Send!</string>
+    <string name="chooser_title">Send e-mail with:</string>
 
     <string name="temperature_number">"Ambient temperature sensor number: "</string>
     <string name="light_number">Ambient light sensor number: </string>
@@ -100,12 +108,4 @@
     <string name="selected_value_display_text">Display Saved Value</string>//uguale a
     read_button_text
 
-
-    <string name="motion_step_counter_text">Conta Passi</string>
-    <string name="step_counter_sensor_list_text">Lista Sensori Conta Passi</string>
-    <string name="step_counter_features_text">Caratteristiche Sensore Conta Passi</string>
-    <string name="step_counter_display_text">Valore Sensore Conta Passi</string>
-    <string name="orientation_text">Orientamento</string>
-    <string name="orientation_sensor_list_text">Lista Sensori di Orientamento</string>
-    <string name="orientation_features_text">Carattestiche Sensore Orientamento</string>
 </resources>

@@ -35,11 +35,6 @@
             android:layout_height="wrap_content"
             android:text="@string/magnetic_field_text" />
         <RadioButton
-            android:id="@+id/radio_orientation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/orientation_text" />
-        <RadioButton
             android:id="@+id/radio_proximity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

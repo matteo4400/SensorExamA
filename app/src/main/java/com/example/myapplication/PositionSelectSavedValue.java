@@ -41,12 +41,6 @@ public class PositionSelectSavedValue extends AppCompatActivity {
                     startActivity(intent);
                     break;
 
-                case R.id.radio_orientation:
-                    String orientation_file_name = "myorientationvalue.txt";
-                    intent.putExtra(EXTRA_MESSAGE, orientation_file_name);
-                    startActivity(intent);
-                    break;
-
                 case R.id.radio_proximity:
                     String proximity_file_name = "myproximityvalue.txt";
                     intent.putExtra(EXTRA_MESSAGE, proximity_file_name);

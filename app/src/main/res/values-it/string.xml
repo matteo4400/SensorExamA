@@ -65,6 +65,15 @@
     <string name="next_operation_btn_text">Procedi</string>
     <string name="view_value_text">Visualizza</string>
     <string name="settings">Impostazioni</string>
+    <string name="report_bug">Mandaci una e-mail per segnalarci eventuali bug!</string>
+    <string name="email_address">team.pannia@gmail.com</string>
+    <string name="email_subject">Segnalazione bug di Sensometer</string>
+    <string name="email_text_hint">Inserisci il testo della e-mail</string>
+    <string name="web_follow">Seguici sulla nostra pagina web!</string>
+    <string name="follow">Seguici!</string>
+    <string name="send">Invia!</string>
+    <string name="chooser_title">Invia e-mail con:</string>
+
 
     <string name="temperature_number">"Sensore di temperatura ambientale numero: "</string>
     <string name="light_number">Sensore di luminosità ambientale numero: </string>

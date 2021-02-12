@@ -40,7 +40,6 @@
         <activity android:name=".Pressure" />
         <activity android:name=".Light" />
         <activity android:name=".EnvironmentalSensors" />
-        <activity android:name=".EnviromentalSensors" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
