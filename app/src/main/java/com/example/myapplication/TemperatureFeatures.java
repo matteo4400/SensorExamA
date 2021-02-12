@@ -53,10 +53,6 @@ public class TemperatureFeatures extends AppCompatActivity implements SensorEven
     }
 
     @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    }
-
-    @Override
     public void onSensorChanged(SensorEvent event) {
         float temperature_value = event.values[0];
         Intent intent = getIntent();
