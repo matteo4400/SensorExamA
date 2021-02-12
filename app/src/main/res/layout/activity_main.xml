@@ -4,41 +4,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="300dp"
     android:background="@color/white">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:background="@color/black"
-        android:text="@string/main_text"
-        android:textAlignment="center"
+        android:text="@string/app_name"
         android:textAllCaps="true"
         android:textColor="@color/white"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:layout_weight="1"
         android:textStyle="italic" />
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="OpenEnvironmentalSensors"
+        android:layout_weight="1"
+        android:textSize="17dp"
+        android:backgroundTint="@color/navy"
         android:text="@string/button_text_ambient" />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="OpenMotionSensor"
+        android:backgroundTint="@color/navy"
+        android:layout_weight="1"
+        android:textSize="17dp"
         android:text="@string/button_text_motion" />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="OpenPositionSensor"
+        android:backgroundTint="@color/navy"
+        android:layout_weight="1"
+        android:textSize="17dp"
         android:text="@string/button_text_position" />
     <Button
-        android:layout_width="211dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="OpenSelectTypeSavedValue"
+        android:backgroundTint="@color/navy"
+        android:layout_weight="1"
+        android:textSize="15dp"
         android:text="@string/btn_text_select_saved_value" />
     <Button
-        android:layout_width="211dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="OpenSettings"
+        android:backgroundTint="@color/navy"
+        android:layout_weight="1"
+        android:textSize="17dp"
         android:text="@string/settings" />
 
 </LinearLayout>

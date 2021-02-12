@@ -21,6 +21,7 @@ public class AccelerometerSensors extends AppCompatActivity {
 
     SensorManager sensormanager;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accelerometer_sensors);
@@ -48,6 +49,7 @@ public class AccelerometerSensors extends AppCompatActivity {
                 btn.setId(i);
                 btn.setText(getString(R.string.accelerometer_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
+               // btn.setBackgroundColor(getColor(R.color.navy));
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
                 lm.addView(ll);
