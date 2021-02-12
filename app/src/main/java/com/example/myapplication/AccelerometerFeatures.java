@@ -62,20 +62,17 @@ public class AccelerometerFeatures extends AppCompatActivity implements SensorEv
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(event.sensor.getName() == Accelerometersensor.getName()){
         float acceleration_value_x = event.values[0];
         float acceleration_value_y = event.values[1];
         float acceleration_value_z = event.values[2];
         Intent intent = getIntent();
         int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
-        displayvalue.setText(getString(R.string.number) +sensor_number + getString(R.string.value_x) + acceleration_value_x+"\n"+
-                getString(R.string.number) + sensor_number + getString(R.string.value_y) + acceleration_value_y+"\n"+
-                getString(R.string.number) + sensor_number + getString(R.string.value_z) + acceleration_value_z+"\n");
+        displayvalue.setText(getString(R.string.number) +sensor_number + getString(R.string.value_x) + acceleration_value_x+"m/s^2"+"\n"+
+                getString(R.string.number) + sensor_number + getString(R.string.value_y) + acceleration_value_y+"m/s^2"+"\n"+
+                getString(R.string.number) + sensor_number + getString(R.string.value_z) + acceleration_value_z+"m/s^2"+"\n");
         }
-    }
 
     @Override
     protected void onResume() {
