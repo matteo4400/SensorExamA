@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import android.content.Intent;
 import android.content.Context;
@@ -18,12 +21,13 @@ public class GravitySensors extends AppCompatActivity {
 
     SensorManager sensormanager;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gravity_sensors);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainGravity);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_GRAVITY) != null) {
             List<Sensor> GravityList = sensormanager.getSensorList(Sensor.TYPE_GRAVITY);
@@ -46,6 +50,9 @@ public class GravitySensors extends AppCompatActivity {
                 btn.setId(i);
                 btn.setText(getString(R.string.gravity_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
+                btn.setBackgroundColor(getColor(R.color.navy));
+                btn.setTextSize(16);
+                btn.setTextColor(getColor(R.color.white));
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
                 lm.addView(ll);

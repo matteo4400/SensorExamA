@@ -22,11 +22,12 @@ public class AccelerometerSensors extends AppCompatActivity {
     SensorManager sensormanager;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accelerometer_sensors);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainAccelerometer);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null) {
             List<Sensor> AccelerometerList = sensormanager.getSensorList(Sensor.TYPE_ACCELEROMETER);
@@ -49,7 +50,9 @@ public class AccelerometerSensors extends AppCompatActivity {
                 btn.setId(i);
                 btn.setText(getString(R.string.accelerometer_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
-               // btn.setBackgroundColor(getColor(R.color.navy));
+                btn.setBackgroundColor(getColor(R.color.navy));
+                btn.setTextColor(getColor(R.color.white));
+                btn.setTextSize(16);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
                 lm.addView(ll);
