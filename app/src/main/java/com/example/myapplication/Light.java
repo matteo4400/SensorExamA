@@ -64,6 +64,7 @@ public class Light extends AppCompatActivity {
                 final TextView textview = new TextView(this);
                 textview.setText(getString(R.string.error_message));
                 textview.setLayoutParams(params);
+                textview.setTextColor(getColor(R.color.black));
                 ll.addView(textview);
                 textview.setTextSize(16);
                 lm.addView(ll);

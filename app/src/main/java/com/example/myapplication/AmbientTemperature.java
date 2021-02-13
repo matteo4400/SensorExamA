@@ -62,6 +62,7 @@ public class AmbientTemperature extends AppCompatActivity {
             final TextView textview = new TextView(this);
             textview.setText(getString(R.string.error_message));
             textview.setLayoutParams(params);
+            textview.setTextColor(getColor(R.color.black));
             textview.setTextSize(16);
             ll.addView(textview);
             lm.addView(ll);
