@@ -17,7 +17,7 @@
         android:textSize="22sp"
         android:layout_weight="1"
         android:gravity="center"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:textAllCaps="true"
         android:textStyle="italic"/>
     <TextView
@@ -27,7 +27,7 @@
         android:gravity="center_horizontal"
         android:layout_weight="1"
         android:textSize="16sp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:textStyle="italic"/>
     <TextView
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
         android:textSize="22sp"
         android:gravity="center"
         android:layout_weight="1"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:textStyle="italic"/>
     <TextView
         android:id="@+id/displayproximityvalue"
@@ -48,7 +48,6 @@
         android:gravity="center_horizontal"
         android:layout_weight="1"
         android:textSize="16sp"
-        android:layout_marginBottom="16dp"
         android:textStyle="italic"/>
     <Button
         android:id ="@+id/save_button"
@@ -57,7 +56,6 @@
         android:layout_weight="1"
         android:textSize="17sp"
         android:backgroundTint="@color/navy"
-        android:layout_marginBottom="32dp"
         android:onClick ="BtnSafe"
         android:text ="@string/safe_button_text" />
     <Button
@@ -67,7 +65,6 @@
         android:layout_weight="1"
         android:textSize="17sp"
         android:backgroundTint="@color/navy"
-        android:layout_marginBottom="16dp"
         android:onClick ="BtnRead"
         android:text ="@string/read_button_text" />
     <TextView
@@ -76,7 +73,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textSize="16sp"
-        android:layout_marginBottom="16dp"
         android:gravity="center_horizontal"
         android:textStyle="italic"/>
 

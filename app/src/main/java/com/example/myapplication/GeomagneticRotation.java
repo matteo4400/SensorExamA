@@ -27,7 +27,7 @@ public class GeomagneticRotation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geomagnetic_rotation);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainGeorotation);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR) != null) {
             List<Sensor> GeorotationList = sensormanager.getSensorList(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR);
@@ -51,6 +51,8 @@ public class GeomagneticRotation extends AppCompatActivity {
                 btn.setText(getString(R.string.georotation_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
                 btn.setBackgroundColor(getColor(R.color.navy));
+                btn.setTextColor(getColor(R.color.white));
+                btn.setTextSize(16);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
                 lm.addView(ll);
@@ -60,6 +62,8 @@ public class GeomagneticRotation extends AppCompatActivity {
             final TextView textview = new TextView(this);
             textview.setText(getString(R.string.error_message));
             textview.setLayoutParams(params);
+            textview.setTextColor(getColor(R.color.black));
+            textview.setTextSize(16);
             ll.addView(textview);
             lm.addView(ll);
         }

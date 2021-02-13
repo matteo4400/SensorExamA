@@ -19,7 +19,7 @@
         android:textSize="22sp"
         android:layout_weight="1"
         android:gravity="center"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:textStyle="italic" />
     <TextView
         android:id="@+id/humidityfeatureslist"
@@ -29,7 +29,7 @@
         android:layout_weight="1"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:textStyle="italic"/>
     <TextView
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
         android:textSize="22sp"
         android:gravity="center"
         android:layout_weight="1"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:textStyle="italic" />
     <TextView
         android:id="@+id/displayhumidityvalue"
@@ -51,17 +51,15 @@
         android:gravity="center_horizontal"
         android:layout_weight="1"
         android:textSize="16sp"
-        android:layout_marginBottom="16dp"
         android:textStyle="italic"/>
     <Button
         android:id ="@+id/save_button"
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:layout_weight="1"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:backgroundTint="@color/navy"
         android:onClick ="BtnSafe"
-        android:layout_marginBottom="32dp"
         android:text ="@string/safe_button_text" />
     <Button
         android:id ="@+id/read_button"
@@ -72,7 +70,6 @@
         android:textSize="17sp"
         android:backgroundTint="@color/navy"
         android:onClick ="BtnRead"
-        android:layout_marginBottom="16dp"
         android:text ="@string/read_button_text" />
     <TextView
         android:id="@+id/humiditysavedvalue"

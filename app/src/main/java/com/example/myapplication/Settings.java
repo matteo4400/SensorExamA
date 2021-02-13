@@ -26,17 +26,12 @@ public class Settings extends AppCompatActivity {
     public void OpenMail(View v) {
         EditText email_edittext = findViewById(R.id.email_text);
         Intent intent = new Intent();
-        Intent sendIntent = new Intent(Intent.ACTION_SEND);
         intent.setAction(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"team.pannia@gmail.com"});
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject));
         intent.putExtra(Intent.EXTRA_TEXT, email_edittext.getText().toString());
         String title = getResources().getString(R.string.chooser_title);
-        Intent chooser = Intent.createChooser(sendIntent, title);
-        if (sendIntent.resolveActivity(getPackageManager()) != null) {
-            startActivity(chooser);
-        }
         startActivity(intent);
     }
 }

@@ -7,18 +7,26 @@
     android:id="@+id/LinearMainSelectSavedValue">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:text="@string/position_type_text"
         android:textColor="@color/white"
         android:background="@color/black"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:textAllCaps="true"
         android:textStyle="italic"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/position_selector_text"
-        android:textStyle="italic" />
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginStart="7dp"
+        android:textStyle="italic"/>
     <RadioGroup
         android:id="@+id/radio_group"
         android:layout_width="match_parent"
@@ -44,6 +52,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/view_value_text"
+        android:layout_marginStart="3dp"
+        android:backgroundTint="@color/navy"
+        android:textColor="@color/white"
         android:onClick="OpenDisplaySelectedValue"/>
 
 </LinearLayout>
