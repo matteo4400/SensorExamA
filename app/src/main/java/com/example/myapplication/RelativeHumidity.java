@@ -22,12 +22,13 @@ public class RelativeHumidity extends AppCompatActivity {
 
     SensorManager sensormanager;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_relative_humidity);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainHumidity);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_RELATIVE_HUMIDITY) != null) {
             List<Sensor> HumidityList = sensormanager.getSensorList(Sensor.TYPE_RELATIVE_HUMIDITY);
@@ -50,6 +51,9 @@ public class RelativeHumidity extends AppCompatActivity {
                 btn.setId(i);
                 btn.setText(getString(R.string.humidity_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
+                btn.setBackgroundColor(getColor(R.color.navy));
+                btn.setTextColor(getColor(R.color.white));
+                btn.setTextSize(16);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
                 lm.addView(ll);
@@ -60,6 +64,7 @@ public class RelativeHumidity extends AppCompatActivity {
             final TextView textview = new TextView(this);
             textview.setText(getString(R.string.error_message));
             textview.setLayoutParams(params);
+            textview.setTextSize(16);
             ll.addView(textview);
             lm.addView(ll);
         }

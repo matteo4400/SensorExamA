@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import android.content.Intent;
 import android.content.Context;
@@ -18,12 +21,13 @@ public class AmbientTemperature extends AppCompatActivity {
 
     SensorManager sensormanager;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ambient_temperature);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainTemperature);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE) != null) {
             List<Sensor> TemperatureList = sensormanager.getSensorList(Sensor.TYPE_AMBIENT_TEMPERATURE);
@@ -46,6 +50,9 @@ public class AmbientTemperature extends AppCompatActivity {
                 btn.setId(i);
                 btn.setText(getString(R.string.temperature_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
+                btn.setBackgroundColor(getColor(R.color.navy));
+                btn.setTextColor(getColor(R.color.white));
+                btn.setTextSize(16);
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
                 lm.addView(ll);
@@ -55,6 +62,7 @@ public class AmbientTemperature extends AppCompatActivity {
             final TextView textview = new TextView(this);
             textview.setText(getString(R.string.error_message));
             textview.setLayoutParams(params);
+            textview.setTextSize(16);
             ll.addView(textview);
             lm.addView(ll);
         }
