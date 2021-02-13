@@ -62,6 +62,8 @@ public class GravitySensors extends AppCompatActivity {
             final TextView textview = new TextView(this);
             textview.setText(getString(R.string.error_message));
             textview.setLayoutParams(params);
+            textview.setTextSize(16);
+            textview.setTextColor(getColor(R.color.black));
             ll.addView(textview);
             lm.addView(ll);
         }

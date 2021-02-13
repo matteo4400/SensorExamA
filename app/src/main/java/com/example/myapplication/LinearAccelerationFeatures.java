@@ -66,9 +66,9 @@ public class LinearAccelerationFeatures extends AppCompatActivity implements Sen
             float linear_acceleration_value_z = event.values[2];
             Intent intent = getIntent();
             int sensor_number = (Integer.parseInt(intent.getStringExtra(Light.EXTRA_MESSAGE)) + 1);
-            displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value_x) + linear_acceleration_value_x + "m/s^2" + "\n" +
-                    getString(R.string.number) + sensor_number + getString(R.string.value_y) + linear_acceleration_value_y + "m/s^2" + "\n" +
-                    getString(R.string.number) + sensor_number + getString(R.string.value_z) + linear_acceleration_value_z + "m/s^2" + "\n");
+            displayvalue.setText(getString(R.string.number) + sensor_number + getString(R.string.value_x) + linear_acceleration_value_x + " m/s^2" + "\n" +
+                    getString(R.string.number) + sensor_number + getString(R.string.value_y) + linear_acceleration_value_y + " m/s^2" + "\n" +
+                    getString(R.string.number) + sensor_number + getString(R.string.value_z) + linear_acceleration_value_z + " m/s^2" + "\n");
         }
 
     @Override
