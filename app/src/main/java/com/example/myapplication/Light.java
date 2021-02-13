@@ -29,6 +29,7 @@ public class Light extends AppCompatActivity {
         setContentView(R.layout.activity_light);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainLight);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.bottomMargin = 36;
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if(sensormanager.getDefaultSensor(Sensor.TYPE_LIGHT) != null) {
             List<Sensor> LightList = sensormanager.getSensorList(Sensor.TYPE_LIGHT);

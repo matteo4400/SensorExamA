@@ -28,6 +28,7 @@ public class GeomagneticRotation extends AppCompatActivity {
         setContentView(R.layout.activity_geomagnetic_rotation);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainGeorotation);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.bottomMargin = 36;
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR) != null) {
             List<Sensor> GeorotationList = sensormanager.getSensorList(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR);

@@ -28,6 +28,7 @@ public class Pressure extends AppCompatActivity {
         setContentView(R.layout.activity_pressure);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainPressure);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.bottomMargin = 36;
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if(sensormanager.getDefaultSensor(Sensor.TYPE_PRESSURE) != null) {
             List<Sensor> PressureList = sensormanager.getSensorList(Sensor.TYPE_PRESSURE);

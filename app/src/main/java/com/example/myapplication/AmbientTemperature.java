@@ -28,6 +28,7 @@ public class AmbientTemperature extends AppCompatActivity {
         setContentView(R.layout.activity_ambient_temperature);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainTemperature);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.bottomMargin = 36;
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE) != null) {
             List<Sensor> TemperatureList = sensormanager.getSensorList(Sensor.TYPE_AMBIENT_TEMPERATURE);

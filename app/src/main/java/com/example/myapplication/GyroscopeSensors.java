@@ -28,6 +28,7 @@ public class GyroscopeSensors extends AppCompatActivity {
         setContentView(R.layout.activity_gyroscope_sensors);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainGyroscope);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.bottomMargin = 36;
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_GYROSCOPE) != null) {
             List<Sensor> GyroscopeList = sensormanager.getSensorList(Sensor.TYPE_GRAVITY);

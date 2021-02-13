@@ -29,6 +29,7 @@ public class RelativeHumidity extends AppCompatActivity {
         setContentView(R.layout.activity_relative_humidity);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainHumidity);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.bottomMargin = 36;
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_RELATIVE_HUMIDITY) != null) {
             List<Sensor> HumidityList = sensormanager.getSensorList(Sensor.TYPE_RELATIVE_HUMIDITY);

@@ -28,6 +28,7 @@ public class LinearAccelerationSensors extends AppCompatActivity {
         setContentView(R.layout.activity_linear_acceleration_sensors);
         final LinearLayout lm = (LinearLayout) findViewById(R.id.LinearMainLinearAcceleration);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.bottomMargin = 36;
         sensormanager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensormanager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION) != null) {
             List<Sensor> LinearAccelerationList = sensormanager.getSensorList(Sensor.TYPE_LINEAR_ACCELERATION);
