@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import android.content.Intent;
 import android.content.Context;
@@ -18,6 +21,7 @@ public class GeomagneticRotation extends AppCompatActivity {
 
     SensorManager sensormanager;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +50,7 @@ public class GeomagneticRotation extends AppCompatActivity {
                 btn.setId(i);
                 btn.setText(getString(R.string.georotation_number) + String.valueOf(i + 1));
                 btn.setLayoutParams(params);
+                btn.setBackgroundColor(getColor(R.color.navy));
                 btn.setOnClickListener(listeners[i]);
                 ll.addView(btn);
                 lm.addView(ll);

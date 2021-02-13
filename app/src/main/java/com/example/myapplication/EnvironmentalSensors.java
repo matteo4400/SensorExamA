@@ -33,9 +33,4 @@ public class EnvironmentalSensors extends AppCompatActivity {
         Intent intent = new Intent(this, RelativeHumidity.class);
         startActivity(intent);
     }
-
-    public void OpenSelectSavedValue(View view) {
-        Intent intent = new Intent(this, EnvironmentSelectSavedValue.class);
-        startActivity(intent);
-    }
 }
